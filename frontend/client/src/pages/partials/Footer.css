@@ -1,0 +1,117 @@
+#footer {
+  background-color: #ff5733;
+  color: #ffffff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__left__area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  flex: 1 1 70%;
+}
+
+.footer__left__area > div {
+  min-width: 180px;
+}
+
+.footer__left__area label {
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer__left__area ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__left__area li {
+  margin-bottom: 8px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer__left__area li:hover {
+  color: #fff;
+}
+
+.footer__left__area a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__right {
+  flex: 1 1 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.social__media__area {
+  display: flex;
+  gap: 10px;
+}
+
+.social__media__area a {
+  color: white;
+  font-size: 28px;
+  transition: color 0.3s ease;
+}
+
+.social__media__area a:hover {
+  color: #fff;
+}
+
+.footer__right p {
+  margin: 0;
+  font-size: 14px;
+  color: white;
+}
+
+.contracted__cards__area h4 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cards__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.cards__list img {
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  filter: grayscale(40%);
+}
+
+@media (max-width: 768px) {
+  #footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__right,
+  .footer__left__area {
+    width: 100%;
+  }
+
+  .footer__left__area {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
