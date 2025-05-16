@@ -121,6 +121,7 @@
   margin: 0 auto;
   position: absolute;
   top: 70px;
+  z-index: 9999;
 }
 #mobile__sidebar__hamburger__icon{
   display: none;
